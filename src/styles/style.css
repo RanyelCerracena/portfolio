@@ -328,15 +328,13 @@ body::-webkit-scrollbar {
     justify-content: center;
     backdrop-filter: blur(10px);
     bottom: 0;
-    transition: opacity .5s linear, transform .5s linear;
-    transform: translateY(100%);
+    transition: opacity .5s linear;
 }
 
 .showModal {
     z-index: 6;
     opacity: 1;
     display: flex;
-    transform: translateY(0);
 }
 
 .bi.bi-x {
@@ -368,6 +366,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .languages>div>img {
@@ -377,6 +376,19 @@ body::-webkit-scrollbar {
 .languages{
     display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+
+.backgroundLanguage{
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all .5s linear;
+    cursor: pointer;
+}
+.backgroundLanguage:hover{
+    transform: scale(110%);
+    box-shadow: 0 1px 30px #a84ef1;
 }
 
 @keyframes lateralMoveRight {
