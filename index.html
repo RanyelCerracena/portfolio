@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Ranyel Cerracena</title>
+</head>
+
+<body>
+    <main>
+
+        <span class="playList" id="playList">
+            <p>De play e viva a experiência</p>
+
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/27ehlmWL5fyx8YXwtcdiEz?utm_source=generator&theme=0"
+                width="100%" height="152" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </span>
+
+        <span class="blur"></span>
+        <div class="homePageContent">
+            <h1 id="name" class="name">Ranyel Cerracena</h1>
+            <p id="phrase" class="phrase">"Cada linha de código que escrevo é um reflexo das emoções e pensamentos que
+                moldam quem sou. Minhas criações transcendem a lógica, são ecos da minha alma."</p>
+        </div>
+        <div class="background">
+            <span class="firstCircle">
+                <span class="brightness"></span>
+            </span>
+            <span class="secondCircle">
+                <span class="brightness"></span>
+            </span>
+            <span class="thirdCircle">
+                <span class="brightness"></span>
+            </span>
+        </div>
+
+        <div id="moveDown" class="moveDown">
+            <img id="moveDownSvg" src="src/images/icons/move-down.svg" alt="Down">
+        </div>
+
+        <section class="projects">
+            <section class="hidden">
+                <h2 id="titleMyProjects" class="hidden">Meus Projetos</h2>
+                <div class="myProjects hidden">
+                    <div class="firstProject">
+                        <img src="src/images/ProjetoComparacao.png" alt="Interface Comparacao Pis e Cofins">
+                        <div class="description">
+                            <p class="projectTitle">Comparação Pis e Cofins</p>
+                        </div>
+                    </div>
+
+                    <div class="secondProject">
+                        <img src="src/images/ProjetoCadFuncionarios.png" alt="Interface Crud de funcionários">
+                        <div class="description">
+                            <p class="projectTitle">CRUD - Cadastro de Funcionários</p>
+                        </div>
+                    </div>
+
+                    <div class="thirdProject">
+                        <img src="src/images/ProjetoSingularity.png" alt="Interface Singularity">
+                        <div class="description">
+                            <p class="projectTitle">Singularity</p>
+                        </div>
+                    </div>
+
+                    <div class="fourthProject">
+                        <img src="src/images/StudioGhibliCat.png" alt="Interface Catalogo de filmes Studio Ghibli">
+                        <div class="description">
+                            <p class="projectTitle">Catalogo de filmes Studio Ghibli</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="modalBlurComp">
+                    <div class="modalComp">
+                        <i class="bi bi-x"></i>
+                        <h3 class="titleModal">Detalhes</h3>
+                        <p class="descriptionModal">Trata-se de uma aplicação desktop com C# utilizando Windows Forms.
+                            Onde o
+                            programa compararia os
+                            valores gerados pelo programa do governo (EFD Contribuições) e com o valor existente no
+                            sistema
+                            contábil Domínio, no fim, gerando uma planilha com os dados da empresa, tais como Razão
+                            Social e
+                            Cnpj, valores transmitidos no Domínio e no EFD. Este programa foi o primeiro programa que
+                            fiz, sendo
+                            instruido a todo momento pelo meu supervisor. Absorvi na pratica a lógica e a linguagem de
+                            programação.
+                            Atualmente esse projeto foi descontinuado e acabou não sendo utilizado, entretanto valeu de
+                            ótima
+                            experiência.</p>
+                        <a target="_blank" href="https://github.com/RanyelCerracena/ComparacaoEFD">
+                            <button>Veja o repositório</button>
+                        </a>
+                    </div>
+                </span>
+                <span class="modalBlurCrud">
+                    <div class="modalCrud">
+                        <i class="bi bi-x"></i>
+                        <h3 class="titleModal">Detalhes</h3>
+                        <p class="descriptionModal">Uma aplicação crud com Windows Forms utilizando C#, onde adiquiri
+                            mais
+                            conhecimento referente a linguagem de programação, e pude aplicar os novos conhecimentos
+                            adiquiridos.
+                            Esse projeto é um crud simples de cadastro de funcionários, entretanto, pude aprender e
+                            colocar em
+                            prática conhecimentos adiquiridos sobre banco de dados relacional, onde utilizei o MySql
+                            juntamente do
+                            MySql Workbench. Foi uma aplicação simples, mas que me ajudou a entender melhor as práticas,
+                            lógicas e a
+                            linguagem de programação</p>
+                        <a target="_blank" href="https://github.com/RanyelCerracena/Aplicacao_CRUD">
+                            <button>Veja o repositório</button>
+                        </a>
+                    </div>
+                </span>
+                <span class="modalBlurSing">
+                    <div class="modalSing">
+                        <i class="bi bi-x"></i>
+                        <h3 class="titleModal">Detalhes</h3>
+                        <p class="descriptionModal">Meu terceiro projeto na carreira da programação, onde pude aplicar o
+                            que aprendi
+                            no primeiro projeto com meu supervisor. O Singularity é também uma ferramenta contábil, onde
+                            usava um
+                            componente nuGet chamado closedXML, o programa lia arquivos txt onde continha informações do
+                            Pis e
+                            Cofins da empresa. E no fim, gerava uma planilha em Excel que continha os dados das
+                            empresas, razão
+                            social e cnpj, as informações dos periodos selecionado nas colunas, e por fim se existia
+                            movimentação ou
+                            não, caso não, escrevia um comentário informando quais os produtos que não tinham
+                            movimentação. Vale
+                            resaltar que foram os primeiros programas que fiz, os códigos são muito confusos, e por isso
+                            tenho
+                            interesse em refazer esse programa trazendo um código mais limpo e para fácil manutenção,
+                            esse programa
+                            foi utilizado, entretanto não foi mais utilizado.</p>
+                        <a target="_blank" href="https://github.com/RanyelCerracena/Validador_EFD">
+                            <button>Veja o repositório</button>
+                        </a>
+                    </div>
+                </span>
+            </section>
+        </section>
+        <section class="skills">
+            <h4>Habilidades</h4><div class="contentsLanguages">
+                
+                <div class="languages">
+                    <div class="backgroundLanguage">
+                        <img src="src/images/icons/html5/html5-original.svg" alt="Html Icon">
+                    </div>
+                    <div class="backgroundLanguage">
+                        <img src="src/images/icons/css3/css3-original.svg" alt="Css Icon">
+                    </div>
+                    <div class="backgroundLanguage">
+                        <img src="src/images/icons/javascript/javascript-original.svg" alt="javascript Icon">
+                    </div>
+                    <div class="backgroundLanguage">
+                        <img src="src/images/icons/csharp/csharp-original.svg" alt="CSharp Icon">
+                    </div>
+                    <div class="backgroundLanguage">
+                        <img src="src/images/icons/git/git-original.svg" alt="Git Icon">
+                    </div>
+                    <div class="backgroundLanguage">
+                        <img src="src/images/icons/mysql/mysql-original.svg" alt="MySql Icon">
+                    </div>
+                    <div class="backgroundLanguage">
+                        <img src="src/images/icons/dotnetcore/dotnetcore-original.svg" alt="Asp.Net Core">
+                    </div>
+                    <div class="backgroundLanguage">
+                        <img src="src/images/icons/react/react-original.svg" alt="React Icon">
+                    </div>
+                </div>
+                <aside class="ContentLanguages">
+                    <div class="backgroundContent">
+                        <p class="languageTitle">Html</p>
+                        <p class="descriptionLanguage">
+                            Assim como muitos, iniciei no mundo da tecnologia através do desenvolvimento Web. Meu aprendizado em html me ajudou muito no começo a entender como funcionava páginas na internet, o que me implicou a entender como funcionavam as coisas por trás dos panos. Hoje, graças ao meu primeiro passo e a essa linguagem de marcação, pude entender melhor como a web funciona, além de me ajudar a chegar onde cheguei e a entender qual seriam os meus objetivos no mercado de trabalho.
+                        </p>
+                    </div>
+                    <div class="backgroundContent">
+                        <p class="languageTitle">CSS</p>
+                        <p class="descriptionLanguage">
+                            O que dizer do bom e velho CSS? Através desta linguagem de marcação, pude começar a compreender melhor o meu gosto por web design, experiência do usuário e interface do usuário. Sempre fui uma pessoa que gostava de se expressar através da arte, e por isso consegui nesse portfolio, trazer à tona esse gosto pela arte, como citei no inicio deste, meus projetos se tornaram extensões dos meus sentimentos.
+                        </p>
+                    </div>
+                    <div class="backgroundContent">
+                        <p class="languageTitle">JavaScript</p>
+                        <p class="descriptionLanguage">
+                            Com JavaScript tive uma experiência mais forte, foi de grande impacto sair de linguagens de marcação (Html e CSS), para finalmente ingressar em uma das maiores e mais usadas linguagens de programação de toda a internet. Inicialmente minha curva de aprendizado foi um tanto ingreme, me levando a querer descobrir novas áreas de atuação no mercado. E com isso, pude entrar em contato com outras linguagens e avançar ainda mais na minha carreira além do aprendizado como um todo.
+                        </p>
+                    </div>
+                    <div class="backgroundContent">
+                        <p class="languageTitle">Csharp</p>
+                        <p class="descriptionLanguage">
+                            Depois do evento com JavaScript, pude conhecer, aprender e aplicar na prática na empresa em que trabalhei o que aprendi utilizando o C#. Desenvolvi aplicações desktop utilizando .NET 6.0, onde fui instruido pelo meu supervisor de departamento. Foi nesse momento e com essa linguagem, que desenvolver ainda mais a minha paixão por programação.
+                        </p>
+                    </div>
+                    <div class="backgroundContent">
+                        <p class="languageTitle">Git</p>
+                        <p class="descriptionLanguage">
+                            
+                        </p>
+                    </div>
+                    <div class="backgroundContent">
+                        <p class="languageTitle">MySql</p>
+                        <p class="descriptionLanguage">
+                            
+                        </p>
+                    </div>
+                    <div class="backgroundContent">
+                        <p class="languageTitle">.Net Core - Asp.Net Core</p>
+                        <p class="descriptionLanguage">
+                            
+                        </p>
+                    </div>
+                    <div class="backgroundContent">
+                        <p class="languageTitle">React</p>
+                        <p class="descriptionLanguage">
+                
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/scripts/script.js" defer></script>
+</body>
+
+</html>
