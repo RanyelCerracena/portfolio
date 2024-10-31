@@ -12,14 +12,14 @@ window.addEventListener("load", () => {
 
 // Função para abrir modais
 const openModal = (modalBlur, modal) => {
-  modalBlur.classList.add("showModal"); // Aplica a classe showModal ao fundo
-  modal.classList.add("showModalLayer"); // Aplica a classe showModalLayer ao modal
+  modalBlur.classList.add("showModal");
+  modal.classList.add("showModalLayer");
 };
 
 // Função para fechar modais
 const closeModal = (modalBlur, modal) => {
-  modal.classList.remove("showModalLayer"); // Remove a classe showModalLayer do modal
-  modalBlur.classList.remove("showModal"); // Remove a classe showModal do fundo
+  modal.classList.remove("showModalLayer");
+  modalBlur.classList.remove("showModal");
 };
 
 // Seleção dos elementos dos modais
@@ -34,7 +34,7 @@ singurality.addEventListener("click", () => {
 
 // Prevenir fechamento ao clicar dentro do modal
 modalSing.addEventListener("click", (event) => {
-  event.stopPropagation(); // Impede o fechamento do modal ao clicar dentro dele
+  event.stopPropagation();
 });
 
 modalBlurSing.addEventListener("click", () => {
@@ -59,25 +59,6 @@ modalCrud.addEventListener("click", (event) => {
 modalBlurCrud.addEventListener("click", () => {
   closeModal(modalBlurCrud, modalCrud);
   console.log("Crud Blur");
-});
-
-const modalBlurComp = document.querySelector(".modalBlurComp");
-const modalComp = document.querySelector(".modalComp");
-const comp = document.querySelector(".firstProject");
-
-comp.addEventListener("click", () => {
-  openModal(modalBlurComp, modalComp);
-  console.log("comp");
-});
-
-// Prevenir fechamento ao clicar dentro do modal
-modalComp.addEventListener("click", (event) => {
-  event.stopPropagation();
-});
-
-modalBlurComp.addEventListener("click", () => {
-  closeModal(modalBlurComp, modalComp);
-  console.log('debugando');
 });
 
 const modalBlurStudio = document.querySelector(".modalBlurStudio");
@@ -130,3 +111,41 @@ technologies.forEach((tech, index) => {
 
 // Exibir a descrição inicial
 showDescription(0);
+
+// Alterar a cor das cores de fundo
+const aboutMe = document.querySelector(".aboutMe");
+
+// Cria o observador
+const observer = new IntersectionObserver((entries) => {
+  const firstCircle = document.querySelector(".firstCircle");
+  const secondCircle = document.querySelector(".secondCircle");
+  const thirdCircle = document.querySelector(".thirdCircle");
+
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      firstCircle.style.backgroundColor = "#4D8BE0";
+      secondCircle.style.backgroundColor = "#7EE0A3";
+      thirdCircle.style.backgroundColor = "#7EDBE0";
+    } else {
+      firstCircle.style.backgroundColor = "#6846ff";
+      secondCircle.style.backgroundColor = "#a84ef1";
+      thirdCircle.style.backgroundColor = "#2796ff";
+    }
+  });
+});
+observer.observe(aboutMe);
+
+const skills = document.querySelector(".skills");
+
+const observerSkills = new IntersectionObserver((entries) => {
+  const line = document.querySelector(".line");
+
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      line.classList.add("openLine");
+    } else {
+      line.classList.remove("openLine");
+    }
+  });
+});
+observerSkills.observe(skills);

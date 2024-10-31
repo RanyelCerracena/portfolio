@@ -40,6 +40,17 @@
         ></iframe>
       </span>
 
+      <span class="sectionSideBar" id="sectionSideBar">
+        <div class="bar">
+          <ul class="sideList">
+            <li class="sideItem"><a href="#home">Inicio</a></li>
+            <li class="sideItem"><a href="#projects">Projetos</a></li>
+            <li class="sideItem"><a href="#skills">Habilidades</a></li>
+            <li class="sideItem"><a href=""></a></li>
+          </ul>
+        </div>
+      </span>
+
       <span class="blur"></span>
       <div class="homePageContent">
         <h1 id="name" class="name">Ranyel Cerracena</h1>
@@ -49,7 +60,7 @@
           são ecos da minha alma."
         </p>
       </div>
-      <div class="background">
+      <div class="background" id="home">
         <span class="firstCircle">
           <span class="brightness"></span>
         </span>
@@ -65,20 +76,10 @@
         <img id="moveDownSvg" src="src/images/icons/move-down.svg" alt="Down" />
       </div>
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <section>
           <h2 id="titleMyProjects">Meus Projetos</h2>
           <div class="myProjects">
-            <div class="firstProject">
-              <img
-                src="src/images/ProjetoComparacao.png"
-                alt="Interface Comparacao Pis e Cofins"
-              />
-              <div class="description">
-                <p class="projectTitle">Comparação Pis e Cofins</p>
-              </div>
-            </div>
-
             <div class="secondProject">
               <img
                 src="src/images/ProjetoCadFuncionarios.png"
@@ -88,7 +89,6 @@
                 <p class="projectTitle">CRUD - Cadastro de Funcionários</p>
               </div>
             </div>
-
             <div class="thirdProject">
               <img
                 src="src/images/ProjetoSingularity.png"
@@ -109,30 +109,6 @@
               </div>
             </div>
           </div>
-          <span class="modalBlurComp">
-            <div class="modalComp">
-              <i class="bi bi-x"></i>
-              <h3 class="titleModal">Detalhes</h3>
-              <p class="descriptionModal">
-                Trata-se de uma aplicação desktop com C# utilizando Windows
-                Forms. Onde o programa compararia os valores gerados pelo
-                programa do governo (EFD Contribuições) e com o valor existente
-                no sistema contábil Domínio, no fim, gerando uma planilha com os
-                dados da empresa, tais como Razão Social e Cnpj, valores
-                transmitidos no Domínio e no EFD. Este programa foi o primeiro
-                programa que fiz, sendo instruido a todo momento pelo meu
-                supervisor. Absorvi na pratica a lógica e a linguagem de
-                programação. Atualmente esse projeto foi descontinuado e acabou
-                não sendo utilizado, entretanto valeu de ótima experiência.
-              </p>
-              <a
-                target="_blank"
-                href="https://github.com/RanyelCerracena/ComparacaoEFD"
-              >
-                <button>Veja o repositório</button>
-              </a>
-            </div>
-          </span>
           <span class="modalBlurCrud">
             <div class="modalCrud">
               <i class="bi bi-x"></i>
@@ -209,7 +185,8 @@
           </span>
         </section>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
+        <hr class="line" />
         <h4>Habilidades</h4>
         <div class="contentsLanguages">
           <div class="languages">
@@ -480,6 +457,36 @@
               </p>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section class="aboutMe">
+        <div class="aboutMeBackground">
+          <h5>Sobre mim</h5>
+          <div class="aboutMeContent">
+            <p>
+              Meu nome é Ranyel Cerracena de Sousa, também conhecido como Race,
+              e sou desenvolvedor Full-Stack e aspirante a desenvolvedor .NET.
+              Minha jornada começou no início de 2023 com desenvolvimento web
+              front-end, onde explorei HTML, CSS e JavaScript e mergulhei no
+              universo da tecnologia por meio de estudos autodidatas. Foi nesse
+              processo que percebi que a programação e a lógica por trás de cada
+              código eram exatamente o que eu queria para minha vida. Com essa
+              motivação, iniciei a graduação em Engenharia de Software e,
+              durante minha trajetória, tive a sorte de conhecer pessoas
+              incríveis que contribuíram imensamente para meu crescimento
+              pessoal e profissional. Ao explorar mais a fundo, me deparei com a
+              linguagem C# e a plataforma .NET, o que me levou ao meu primeiro
+              projeto desktop usando Windows Forms. Essa experiência despertou
+              meu interesse pelo desenvolvimento back-end, especialmente com C#,
+              e desde então, venho estudando a fundo tudo o que a plataforma
+              .NET tem a oferecer. Hoje, um dos meus objetivos é conquistar o
+              reconhecimento Microsoft MVP, contribuindo para a comunidade .NET
+              e ajudando outras pessoas que estão começando sua carreira no
+              mundo da tecnologia e programação. Mais uma vez, meu nome é Ranyel
+              Cerracena, ou Race, e esta é uma pequena demonstração de quem sou.
+            </p>
+          </div>
         </div>
       </section>
     </main>
