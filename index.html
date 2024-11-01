@@ -1,469 +1,418 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <title>Ranyel Cerracena</title>
-  </head>
 
-  <body>
-    <main>
-      <span class="playList" id="playList">
-        <p>De play e viva a experiência</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <title>Ranyel Cerracena</title>
+</head>
 
-        <iframe
-          style="border-radius: 12px"
-          src="https://open.spotify.com/embed/playlist/27ehlmWL5fyx8YXwtcdiEz?utm_source=generator&theme=0"
-          width="100%"
-          height="152"
-          frameborder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
+<body>
+  <main>
+    <span class="playList" id="playList">
+      <p>De play e viva a experiência</p>
+
+      <iframe style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/27ehlmWL5fyx8YXwtcdiEz?utm_source=generator&theme=0" width="100%"
+        height="152" frameborder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </span>
+
+    <span class="sectionSideBar" id="sectionSideBar">
+      <div class="bar">
+        <ul class="sideList">
+          <li class="sideItem"><a href="#home">Inicio</a></li>
+          <li class="sideItem"><a href="#projects">Projetos</a></li>
+          <li class="sideItem"><a href="#skills">Habilidades</a></li>
+          <li class="sideItem"><a href=""></a></li>
+        </ul>
+      </div>
+    </span>
+
+    <span class="blur"></span>
+    <div class="homePageContent">
+      <h1 id="name" class="name">Ranyel Cerracena</h1>
+      <p id="phrase" class="phrase">
+        "Cada linha de código que escrevo é um reflexo das emoções e
+        pensamentos que moldam quem sou. Minhas criações transcendem a lógica,
+        são ecos da minha alma."
+      </p>
+    </div>
+    <div class="background" id="home">
+      <span class="firstCircle">
+        <span class="brightness"></span>
       </span>
-
-      <span class="sectionSideBar" id="sectionSideBar">
-        <div class="bar">
-          <ul class="sideList">
-            <li class="sideItem"><a href="#home">Inicio</a></li>
-            <li class="sideItem"><a href="#projects">Projetos</a></li>
-            <li class="sideItem"><a href="#skills">Habilidades</a></li>
-            <li class="sideItem"><a href=""></a></li>
-          </ul>
-        </div>
+      <span class="secondCircle">
+        <span class="brightness"></span>
       </span>
+      <span class="thirdCircle">
+        <span class="brightness"></span>
+      </span>
+    </div>
 
-      <span class="blur"></span>
-      <div class="homePageContent">
-        <h1 id="name" class="name">Ranyel Cerracena</h1>
-        <p id="phrase" class="phrase">
-          "Cada linha de código que escrevo é um reflexo das emoções e
-          pensamentos que moldam quem sou. Minhas criações transcendem a lógica,
-          são ecos da minha alma."
-        </p>
-      </div>
-      <div class="background" id="home">
-        <span class="firstCircle">
-          <span class="brightness"></span>
-        </span>
-        <span class="secondCircle">
-          <span class="brightness"></span>
-        </span>
-        <span class="thirdCircle">
-          <span class="brightness"></span>
-        </span>
-      </div>
+    <div id="moveDown" class="moveDown">
+      <img id="moveDownSvg" src="src/images/icons/move-down.svg" alt="Down" />
+    </div>
 
-      <div id="moveDown" class="moveDown">
-        <img id="moveDownSvg" src="src/images/icons/move-down.svg" alt="Down" />
-      </div>
-
-      <section class="projects" id="projects">
-        <section>
-          <h2 id="titleMyProjects">Meus Projetos</h2>
-          <div class="myProjects">
-            <div class="secondProject">
-              <img
-                src="src/images/ProjetoCadFuncionarios.png"
-                alt="Interface Crud de funcionários"
-              />
-              <div class="description">
-                <p class="projectTitle">CRUD - Cadastro de Funcionários</p>
-              </div>
-            </div>
-            <div class="thirdProject">
-              <img
-                src="src/images/ProjetoSingularity.png"
-                alt="Interface Singularity"
-              />
-              <div class="description">
-                <p class="projectTitle">Singularity</p>
-              </div>
-            </div>
-
-            <div class="fourthProject">
-              <img
-                src="src/images/StudioGhibliCat.png"
-                alt="Interface Catalogo de filmes Studio Ghibli"
-              />
-              <div class="description">
-                <p class="projectTitle">Catalogo de filmes Studio Ghibli</p>
-              </div>
+    <section class="projects" id="projects">
+      <section>
+        <h2 id="titleMyProjects">Meus Projetos</h2>
+        <div class="myProjects">
+          <div class="secondProject">
+            <img src="src/images/ProjetoCadFuncionarios.png" alt="Interface Crud de funcionários" />
+            <div class="description">
+              <p class="projectTitle">CRUD - Cadastro de Funcionários</p>
             </div>
           </div>
-          <span class="modalBlurCrud">
-            <div class="modalCrud">
-              <i class="bi bi-x"></i>
-              <h3 class="titleModal">Detalhes</h3>
-              <p class="descriptionModal">
-                Uma aplicação crud com Windows Forms utilizando C#, onde
-                adiquiri mais conhecimento referente a linguagem de programação,
-                e pude aplicar os novos conhecimentos adiquiridos. Esse projeto
-                é um crud simples de cadastro de funcionários, entretanto, pude
-                aprender e colocar em prática conhecimentos adiquiridos sobre
-                banco de dados relacional, onde utilizei o MySql juntamente do
-                MySql Workbench. Foi uma aplicação simples, mas que me ajudou a
-                entender melhor as práticas, lógicas e a linguagem de
-                programação
-              </p>
-              <a
-                target="_blank"
-                href="https://github.com/RanyelCerracena/Aplicacao_CRUD"
-              >
-                <button>Veja o repositório</button>
-              </a>
-            </div>
-          </span>
-          <span class="modalBlurSing">
-            <div class="modalSing">
-              <i class="bi bi-x"></i>
-              <h3 class="titleModal">Detalhes</h3>
-              <p class="descriptionModal">
-                Meu terceiro projeto na carreira da programação, onde pude
-                aplicar o que aprendi no primeiro projeto com meu supervisor. O
-                Singularity é também uma ferramenta contábil, onde usava um
-                componente nuGet chamado closedXML, o programa lia arquivos txt
-                onde continha informações do Pis e Cofins da empresa. E no fim,
-                gerava uma planilha em Excel que continha os dados das empresas,
-                razão social e cnpj, as informações dos periodos selecionado nas
-                colunas, e por fim se existia movimentação ou não, caso não,
-                escrevia um comentário informando quais os produtos que não
-                tinham movimentação. Vale resaltar que foram os primeiros
-                programas que fiz, os códigos são muito confusos, e por isso
-                tenho interesse em refazer esse programa trazendo um código mais
-                limpo e para fácil manutenção, esse programa foi utilizado,
-                entretanto não foi mais utilizado.
-              </p>
-              <a
-                target="_blank"
-                href="https://github.com/RanyelCerracena/Validador_EFD"
-              >
-                <button>Veja o repositório</button>
-              </a>
-            </div>
-          </span>
-          <span class="modalBlurStudio">
-            <div class="modalStudio">
-              <i class="bi bi-x"></i>
-              <h3 class="titleModal">Detalhes</h3>
-              <p class="descriptionModal">
-                Projeto onde pude implementar meus conhecimentos no
-                desenvolvimento web front-end, além de que foi um projeto que
-                também me trouxe muitos conhecimentos, incluindo o uso de append
-                e preppend no javascript, podendo assim, implementar botões de
-                next (próximo) e back (voltar), podendo utilizar de animações de
-                ir e voltar. Um dos projetos onde pude dedicar mais tempo e um
-                dos que mais gostei do resultado final do front-end. Além de foi
-                um projeto onde pude aperfeiçoar meus arquivos README.md, como
-                claramente podem notar.
-              </p>
-              <a
-                target="_blank"
-                href="https://github.com/RanyelCerracena/Studio-Ghibli-Catalog"
-              >
-                <button>Veja o repositório</button>
-              </a>
-            </div>
-          </span>
-        </section>
-      </section>
-      <section class="skills" id="skills">
-        <hr class="line" />
-        <h4>Habilidades</h4>
-        <div class="contentsLanguages">
-          <div class="languages">
-            <div class="backgroundLanguage html">
-              <img
-                src="src/images/icons/html5/html5-original.svg"
-                alt="Html Icon"
-              />
-            </div>
-            <div class="backgroundLanguage css">
-              <img
-                src="src/images/icons/css3/css3-original.svg"
-                alt="Css Icon"
-              />
-            </div>
-            <div class="backgroundLanguage javascript">
-              <img
-                src="src/images/icons/javascript/javascript-original.svg"
-                alt="javascript Icon"
-              />
-            </div>
-            <div class="backgroundLanguage csharp">
-              <img
-                src="src/images/icons/csharp/csharp-original.svg"
-                alt="CSharp Icon"
-              />
-            </div>
-            <div class="backgroundLanguage mysql">
-              <img
-                src="src/images/icons/mysql/mysql-original.svg"
-                alt="MySql Icon"
-              />
-            </div>
-            <div class="backgroundLanguage aspnet">
-              <img
-                src="src/images/icons/dotnetcore/dotnetcore-original.svg"
-                alt="Asp.Net Core"
-              />
-            </div>
-            <div class="backgroundLanguage git">
-              <img src="src/images/icons/git/git-original.svg" alt="Git Icon" />
-            </div>
-            <div class="backgroundLanguage bootstrap">
-              <img
-                src="src/images/icons/bootstrap/bootstrap-original.svg"
-                alt="Asp.Net Core"
-              />
-            </div>
-            <div class="backgroundLanguage react">
-              <img
-                src="src/images/icons/react/react-original.svg"
-                alt="React Icon"
-              />
+          <div class="thirdProject">
+            <img src="src/images/ProjetoSingularity.png" alt="Interface Singularity" />
+            <div class="description">
+              <p class="projectTitle">Singularity</p>
             </div>
           </div>
-          <aside class="asideLanguages">
-            <div class="backgroundContent">
-              <p class="languageTitle">HTML</p>
-              <p class="descriptionLanguage">
-                Meu primeiro contato com o mundo do desenvolvimento web se deu
-                através do HTML, uma linguagem de marcação essencial que serve
-                como a base estrutural de qualquer página na internet. A partir
-                do momento em que comecei a entender como funcionava a criação
-                de páginas estáticas, pude visualizar o imenso potencial da
-                tecnologia na construção de sites e aplicações. O HTML me
-                proporcionou um entendimento profundo sobre a organização da
-                web, permitindo que eu compreendesse como os navegadores
-                processam e exibem informações. Mais do que uma simples
-                linguagem de marcação, o HTML foi um catalisador para despertar
-                minha curiosidade sobre o desenvolvimento e, consequentemente,
-                sobre como otimizar a experiência dos usuários na navegação
-                online. Através dele, aprendi que a estrutura e semântica são
-                fundamentais para a acessibilidade e SEO, dois fatores cruciais
-                no desenvolvimento moderno. Esse aprendizado me impulsionou a
-                seguir uma carreira na tecnologia, com foco no desenvolvimento
-                de soluções que não apenas funcionam, mas também criam valor
-                para os usuários e empresas.
-              </p>
-            </div>
 
-            <div class="backgroundContent">
-              <p class="languageTitle">CSS</p>
-              <p class="descriptionLanguage">
-                Se o HTML me deu a estrutura, o CSS foi o elemento que me
-                permitiu dar vida às páginas. Essa linguagem de estilização foi
-                o primeiro passo para que eu pudesse expressar minha
-                criatividade no desenvolvimento web. Desde o início, percebi que
-                o CSS era muito mais do que apenas cores e fontes; ele se
-                tratava de criar experiências visuais envolventes, otimizadas e
-                acessíveis. Através dele, pude aprender sobre a importância de
-                design responsivo, flexibilidade e usabilidade, além de
-                compreender como um bom layout pode afetar diretamente a forma
-                como os usuários interagem com uma página. Com o tempo, fui
-                aperfeiçoando minhas habilidades, utilizando ferramentas como
-                media queries e flexbox para garantir que meus projetos fossem
-                adequados a diferentes dispositivos e tamanhos de tela. A
-                combinação de HTML e CSS me fez entender que a estética e a
-                funcionalidade devem andar lado a lado, e essa compreensão me
-                levou a explorar ainda mais a fundo o design de interfaces de
-                usuário (UI) e a experiência do usuário (UX). A estilização das
-                páginas, portanto, tornou-se uma maneira de expressar minha
-                paixão por arte, e cada projeto se transformou em uma extensão
-                da minha visão criativa.
-              </p>
+          <div class="fourthProject">
+            <img src="src/images/StudioGhibliCat.png" alt="Interface Catalogo de filmes Studio Ghibli" />
+            <div class="description">
+              <p class="projectTitle">Catalogo de filmes Studio Ghibli</p>
             </div>
-
-            <div class="backgroundContent">
-              <p class="languageTitle">JavaScript</p>
-              <p class="descriptionLanguage">
-                Ao dominar HTML e CSS, percebi que a próxima etapa para evoluir
-                no desenvolvimento web seria mergulhar no mundo da programação,
-                e JavaScript foi a linguagem que me abriu as portas para isso. A
-                transição de linguagens de marcação para uma linguagem de
-                programação de verdade foi desafiadora, mas ao mesmo tempo
-                fascinante. Inicialmente, me deparei com uma curva de
-                aprendizado íngreme, onde precisei aprender a lógica de
-                programação, manipulação de DOM e eventos, além de conceitos
-                mais avançados como promessas e assincronismo. No entanto, essa
-                dificuldade inicial logo se transformou em entusiasmo, pois vi o
-                impacto imediato que JavaScript podia causar em uma página. A
-                linguagem me permitiu adicionar interatividade e dinamismo aos
-                meus projetos, fazendo com que as páginas não fossem apenas
-                estáticas, mas interativas e envolventes. Além disso, JavaScript
-                também abriu caminho para novas oportunidades de aprendizado,
-                como a exploração de frameworks populares como React e a
-                integração com APIs. Foi a partir de JavaScript que comecei a
-                desenvolver um interesse mais profundo por back-end, performance
-                e otimização de aplicações web, temas que hoje considero
-                essenciais para o desenvolvimento de soluções completas e
-                robustas.
-              </p>
-            </div>
-
-            <div class="backgroundContent">
-              <p class="languageTitle">Csharp</p>
-              <p class="descriptionLanguage">
-                Após adquirir uma base sólida em JavaScript, minha trajetória no
-                desenvolvimento de software deu um grande salto quando tive a
-                oportunidade de trabalhar com C#. Esta linguagem de programação
-                orientada a objetos, amplamente utilizada em diversos tipos de
-                aplicações, tornou-se um divisor de águas em minha carreira.
-                Durante minha experiência em uma empresa, desenvolvi aplicações
-                desktop utilizando o framework .NET 6.0, o que me permitiu
-                aplicar conceitos avançados de programação, como encapsulamento,
-                herança e polimorfismo, além de padrões de design que aumentaram
-                a qualidade do código. Foi nesse ambiente corporativo que pude
-                ver, na prática, o impacto que uma linguagem robusta como o C#
-                pode ter no desenvolvimento de soluções empresariais de alta
-                performance. O aprendizado foi intenso, mas também
-                recompensador, pois o C# me ensinou não apenas a codificar, mas
-                a pensar de forma mais estratégica, considerando aspectos como
-                escalabilidade e manutenibilidade das aplicações. Hoje, vejo o
-                C# e a plataforma .NET como peças-chave no meu desenvolvimento
-                como programador. Meu objetivo futuro é alcançar o
-                reconhecimento como MVP pela Microsoft, um título que reforçaria
-                meu compromisso com a excelência e inovação dentro do
-                ecossistema .NET.
-              </p>
-            </div>
-
-            <div class="backgroundContent">
-              <p class="languageTitle">MySql</p>
-              <p class="descriptionLanguage">
-                Quando comecei a trabalhar com C#, rapidamente percebi a
-                importância de dominar o gerenciamento de bancos de dados, e foi
-                assim que tive meu primeiro contato com o MySQL. Utilizando o
-                MySQL Workbench como ferramenta, fui capaz de aprender as
-                nuances de uma das linguagens mais poderosas para manipulação de
-                dados: SQL. O gerenciamento de banco de dados é essencial em
-                qualquer aplicação moderna, e essa habilidade me permitiu criar
-                sistemas robustos e eficientes. Em especial, apliquei meus
-                conhecimentos em um sistema CRUD, onde desenvolvi uma solução
-                completa para a criação, leitura, atualização e exclusão de
-                dados, o que me permitiu integrar o front-end com o back-end de
-                maneira eficaz. O trabalho com bancos de dados não só ampliou
-                minhas capacidades técnicas, mas também me proporcionou uma
-                compreensão mais profunda da arquitetura de sistemas, otimização
-                de consultas e segurança de dados, elementos críticos para o
-                sucesso de qualquer aplicação de larga escala.
-              </p>
-            </div>
-
-            <div class="backgroundContent">
-              <p class="languageTitle">Asp.Net Core</p>
-              <p class="descriptionLanguage">
-                Atualmente, tenho me dedicado com afinco ao estudo e ao
-                aprimoramento das minhas habilidades em ASP.NET Core, um
-                framework da plataforma .NET que me proporciona uma maneira
-                eficiente de desenvolver aplicações web escaláveis e de alta
-                performance. Minha experiência com este framework engloba a
-                utilização de tecnologias como MVC, Razor Pages e Blazor,
-                permitindo que eu construa soluções completas para o ambiente
-                web. O que mais me atrai no ASP.NET Core é a sua flexibilidade e
-                poder, especialmente ao trabalhar com o .NET 8.0. No entanto, ao
-                explorar o conteúdo disponível sobre essa tecnologia, percebi
-                que ainda há uma lacuna significativa de materiais voltados para
-                iniciantes, e é exatamente essa necessidade que me motiva a, no
-                futuro, contribuir com a comunidade. Pretendo compartilhar meu
-                conhecimento e ajudar a preencher essa lacuna, criando conteúdos
-                didáticos que possam auxiliar outros desenvolvedores que estão
-                iniciando sua jornada no ASP.NET Core, facilitando sua
-                aprendizagem e capacitação para o mercado de trabalho.
-              </p>
-            </div>
-
-            <div class="backgroundContent">
-              <p class="languageTitle">Git</p>
-              <p class="descriptionLanguage">
-                Git foi uma das primeiras ferramentas que introduzi na minha
-                rotina de desenvolvimento e rapidamente percebi sua importância
-                para o versionamento de código. Com ele, aprendi a gerenciar
-                diferentes versões de um projeto, permitindo que eu trabalhasse
-                de forma mais organizada e eficiente. Recentemente, obtive uma
-                certificação em Git pela plataforma DIO.me, o que consolidou
-                ainda mais meu entendimento sobre o funcionamento dessa poderosa
-                ferramenta. Git não é apenas sobre controle de versão; ele
-                também permite colaboração eficiente em equipes, já que
-                diferentes desenvolvedores podem trabalhar simultaneamente no
-                mesmo projeto, realizando commits, gerenciando branches e
-                resolvendo conflitos de maneira rápida. A experiência que
-                adquiri utilizando Git foi fundamental para que eu pudesse
-                voltar no tempo e recuperar versões anteriores de códigos
-                importantes que haviam sido alterados acidentalmente. A
-                ferramenta provou ser indispensável para garantir a integridade
-                e a continuidade de qualquer projeto de software.
-              </p>
-            </div>
-
-            <div class="backgroundContent">
-              <p class="languageTitle">Bootstrap</p>
-              <p class="descriptionLanguage">
-                O primeiro framework CSS que tive o prazer de aprender. Comecei
-                a utilizá-lo durante um projeto importante em que trabalhei. Com
-                a versatilidade do Bootstrap, pude aplicar componentes prontos
-                que aceleraram o processo de desenvolvimento front-end. A
-                modularidade e a responsividade nativas foram recursos
-                essenciais, facilitando o desenvolvimento de layouts responsivos
-                com menor esforço. No entanto, para otimizar a performance de um
-                projeto específico, decidi seguir por uma abordagem manual,
-                utilizando HTML, CSS e JavaScript puros, sem o suporte do
-                framework. Apesar de exigir mais trabalho, essa decisão me
-                permitiu entender melhor a estrutura do código e aumentar minhas
-                habilidades com estilização personalizada. O aprendizado com
-                Bootstrap, no entanto, segue sendo fundamental para mim,
-                especialmente quando busco agilidade em protótipos ou projetos
-                que necessitem de rápida implementação de design moderno e
-                responsivo.
-              </p>
-            </div>
-            <div class="backgroundContent">
-              <p class="languageTitle">React</p>
-              <p class="descriptionLanguage">
-                React é um dos frameworks front-end mais poderosos com os quais
-                comecei a ter contato. A flexibilidade e a estrutura baseada em
-                componentes do React oferecem uma maneira eficiente de construir
-                interfaces dinâmicas e interativas. Ainda que eu não tenha
-                desenvolvido um projeto significativo com ele até o momento,
-                estou profundamente interessado em explorar mais suas
-                capacidades. Pretendo integrar o React em uma aplicação web
-                utilizando C# no back-end, combinando o melhor de ambos os
-                mundos. Além disso, vejo no React uma excelente oportunidade
-                para aprimorar a experiência do usuário com interatividade
-                fluida e rápida, aproveitando o Virtual DOM para otimizar a
-                performance. A comunidade vibrante em torno do React também é
-                uma grande fonte de suporte, tornando o aprendizado contínuo
-                desse framework uma jornada empolgante e promissora para o meu
-                desenvolvimento profissional.
-              </p>
-            </div>
-          </aside>
+          </div>
         </div>
+        <span class="modalBlurCrud">
+          <div class="modalCrud">
+            <i class="bi bi-x"></i>
+            <h3 class="titleModal">Detalhes</h3>
+            <p class="descriptionModal">
+              Uma aplicação crud com Windows Forms utilizando C#, onde
+              adiquiri mais conhecimento referente a linguagem de programação,
+              e pude aplicar os novos conhecimentos adiquiridos. Esse projeto
+              é um crud simples de cadastro de funcionários, entretanto, pude
+              aprender e colocar em prática conhecimentos adiquiridos sobre
+              banco de dados relacional, onde utilizei o MySql juntamente do
+              MySql Workbench. Foi uma aplicação simples, mas que me ajudou a
+              entender melhor as práticas, lógicas e a linguagem de
+              programação
+            </p>
+            <a target="_blank" href="https://github.com/RanyelCerracena/Aplicacao_CRUD">
+              <button>Veja o repositório</button>
+            </a>
+          </div>
+        </span>
+        <span class="modalBlurSing">
+          <div class="modalSing">
+            <i class="bi bi-x"></i>
+            <h3 class="titleModal">Detalhes</h3>
+            <p class="descriptionModal">
+              Meu terceiro projeto na carreira da programação, onde pude
+              aplicar o que aprendi no primeiro projeto com meu supervisor. O
+              Singularity é também uma ferramenta contábil, onde usava um
+              componente nuGet chamado closedXML, o programa lia arquivos txt
+              onde continha informações do Pis e Cofins da empresa. E no fim,
+              gerava uma planilha em Excel que continha os dados das empresas,
+              razão social e cnpj, as informações dos periodos selecionado nas
+              colunas, e por fim se existia movimentação ou não, caso não,
+              escrevia um comentário informando quais os produtos que não
+              tinham movimentação. Vale resaltar que foram os primeiros
+              programas que fiz, os códigos são muito confusos, e por isso
+              tenho interesse em refazer esse programa trazendo um código mais
+              limpo e para fácil manutenção, esse programa foi utilizado,
+              entretanto não foi mais utilizado.
+            </p>
+            <a target="_blank" href="https://github.com/RanyelCerracena/Validador_EFD">
+              <button>Veja o repositório</button>
+            </a>
+          </div>
+        </span>
+        <span class="modalBlurStudio">
+          <div class="modalStudio">
+            <i class="bi bi-x"></i>
+            <h3 class="titleModal">Detalhes</h3>
+            <p class="descriptionModal">
+              Projeto onde pude implementar meus conhecimentos no
+              desenvolvimento web front-end, além de que foi um projeto que
+              também me trouxe muitos conhecimentos, incluindo o uso de append
+              e preppend no javascript, podendo assim, implementar botões de
+              next (próximo) e back (voltar), podendo utilizar de animações de
+              ir e voltar. Um dos projetos onde pude dedicar mais tempo e um
+              dos que mais gostei do resultado final do front-end. Além de foi
+              um projeto onde pude aperfeiçoar meus arquivos README.md, como
+              claramente podem notar.
+            </p>
+            <a target="_blank" href="https://github.com/RanyelCerracena/Studio-Ghibli-Catalog">
+              <button>Veja o repositório</button>
+            </a>
+          </div>
+        </span>
       </section>
+    </section>
+    <section class="skills" id="skills">
+      <hr class="line" />
+      <h4>Habilidades</h4>
+      <div class="contentsLanguages">
+        <div class="languages">
+          <div class="backgroundLanguage html">
+            <img src="src/images/icons/html5/html5-original.svg" alt="Html Icon" />
+          </div>
+          <div class="backgroundLanguage css">
+            <img src="src/images/icons/css3/css3-original.svg" alt="Css Icon" />
+          </div>
+          <div class="backgroundLanguage javascript">
+            <img src="src/images/icons/javascript/javascript-original.svg" alt="javascript Icon" />
+          </div>
+          <div class="backgroundLanguage csharp">
+            <img src="src/images/icons/csharp/csharp-original.svg" alt="CSharp Icon" />
+          </div>
+          <div class="backgroundLanguage mysql">
+            <img src="src/images/icons/mysql/mysql-original.svg" alt="MySql Icon" />
+          </div>
+          <div class="backgroundLanguage aspnet">
+            <img src="src/images/icons/dotnetcore/dotnetcore-original.svg" alt="Asp.Net Core" />
+          </div>
+          <div class="backgroundLanguage git">
+            <img src="src/images/icons/git/git-original.svg" alt="Git Icon" />
+          </div>
+          <div class="backgroundLanguage bootstrap">
+            <img src="src/images/icons/bootstrap/bootstrap-original.svg" alt="Asp.Net Core" />
+          </div>
+          <div class="backgroundLanguage react">
+            <img src="src/images/icons/react/react-original.svg" alt="React Icon" />
+          </div>
+        </div>
+        <aside class="asideLanguages">
+          <div class="backgroundContent">
+            <p class="languageTitle">HTML</p>
+            <p class="descriptionLanguage">
+              Meu primeiro contato com o mundo do desenvolvimento web se deu
+              através do HTML, uma linguagem de marcação essencial que serve
+              como a base estrutural de qualquer página na internet. A partir
+              do momento em que comecei a entender como funcionava a criação
+              de páginas estáticas, pude visualizar o imenso potencial da
+              tecnologia na construção de sites e aplicações. O HTML me
+              proporcionou um entendimento profundo sobre a organização da
+              web, permitindo que eu compreendesse como os navegadores
+              processam e exibem informações. Mais do que uma simples
+              linguagem de marcação, o HTML foi um catalisador para despertar
+              minha curiosidade sobre o desenvolvimento e, consequentemente,
+              sobre como otimizar a experiência dos usuários na navegação
+              online. Através dele, aprendi que a estrutura e semântica são
+              fundamentais para a acessibilidade e SEO, dois fatores cruciais
+              no desenvolvimento moderno. Esse aprendizado me impulsionou a
+              seguir uma carreira na tecnologia, com foco no desenvolvimento
+              de soluções que não apenas funcionam, mas também criam valor
+              para os usuários e empresas.
+            </p>
+          </div>
 
-      <section class="aboutMe">
-        <div class="aboutMeBackground">
+          <div class="backgroundContent">
+            <p class="languageTitle">CSS</p>
+            <p class="descriptionLanguage">
+              Se o HTML me deu a estrutura, o CSS foi o elemento que me
+              permitiu dar vida às páginas. Essa linguagem de estilização foi
+              o primeiro passo para que eu pudesse expressar minha
+              criatividade no desenvolvimento web. Desde o início, percebi que
+              o CSS era muito mais do que apenas cores e fontes; ele se
+              tratava de criar experiências visuais envolventes, otimizadas e
+              acessíveis. Através dele, pude aprender sobre a importância de
+              design responsivo, flexibilidade e usabilidade, além de
+              compreender como um bom layout pode afetar diretamente a forma
+              como os usuários interagem com uma página. Com o tempo, fui
+              aperfeiçoando minhas habilidades, utilizando ferramentas como
+              media queries e flexbox para garantir que meus projetos fossem
+              adequados a diferentes dispositivos e tamanhos de tela. A
+              combinação de HTML e CSS me fez entender que a estética e a
+              funcionalidade devem andar lado a lado, e essa compreensão me
+              levou a explorar ainda mais a fundo o design de interfaces de
+              usuário (UI) e a experiência do usuário (UX). A estilização das
+              páginas, portanto, tornou-se uma maneira de expressar minha
+              paixão por arte, e cada projeto se transformou em uma extensão
+              da minha visão criativa.
+            </p>
+          </div>
+
+          <div class="backgroundContent">
+            <p class="languageTitle">JavaScript</p>
+            <p class="descriptionLanguage">
+              Ao dominar HTML e CSS, percebi que a próxima etapa para evoluir
+              no desenvolvimento web seria mergulhar no mundo da programação,
+              e JavaScript foi a linguagem que me abriu as portas para isso. A
+              transição de linguagens de marcação para uma linguagem de
+              programação de verdade foi desafiadora, mas ao mesmo tempo
+              fascinante. Inicialmente, me deparei com uma curva de
+              aprendizado íngreme, onde precisei aprender a lógica de
+              programação, manipulação de DOM e eventos, além de conceitos
+              mais avançados como promessas e assincronismo. No entanto, essa
+              dificuldade inicial logo se transformou em entusiasmo, pois vi o
+              impacto imediato que JavaScript podia causar em uma página. A
+              linguagem me permitiu adicionar interatividade e dinamismo aos
+              meus projetos, fazendo com que as páginas não fossem apenas
+              estáticas, mas interativas e envolventes. Além disso, JavaScript
+              também abriu caminho para novas oportunidades de aprendizado,
+              como a exploração de frameworks populares como React e a
+              integração com APIs. Foi a partir de JavaScript que comecei a
+              desenvolver um interesse mais profundo por back-end, performance
+              e otimização de aplicações web, temas que hoje considero
+              essenciais para o desenvolvimento de soluções completas e
+              robustas.
+            </p>
+          </div>
+
+          <div class="backgroundContent">
+            <p class="languageTitle">Csharp</p>
+            <p class="descriptionLanguage">
+              Após adquirir uma base sólida em JavaScript, minha trajetória no
+              desenvolvimento de software deu um grande salto quando tive a
+              oportunidade de trabalhar com C#. Esta linguagem de programação
+              orientada a objetos, amplamente utilizada em diversos tipos de
+              aplicações, tornou-se um divisor de águas em minha carreira.
+              Durante minha experiência em uma empresa, desenvolvi aplicações
+              desktop utilizando o framework .NET 6.0, o que me permitiu
+              aplicar conceitos avançados de programação, como encapsulamento,
+              herança e polimorfismo, além de padrões de design que aumentaram
+              a qualidade do código. Foi nesse ambiente corporativo que pude
+              ver, na prática, o impacto que uma linguagem robusta como o C#
+              pode ter no desenvolvimento de soluções empresariais de alta
+              performance. O aprendizado foi intenso, mas também
+              recompensador, pois o C# me ensinou não apenas a codificar, mas
+              a pensar de forma mais estratégica, considerando aspectos como
+              escalabilidade e manutenibilidade das aplicações. Hoje, vejo o
+              C# e a plataforma .NET como peças-chave no meu desenvolvimento
+              como programador. Meu objetivo futuro é alcançar o
+              reconhecimento como MVP pela Microsoft, um título que reforçaria
+              meu compromisso com a excelência e inovação dentro do
+              ecossistema .NET.
+            </p>
+          </div>
+
+          <div class="backgroundContent">
+            <p class="languageTitle">MySql</p>
+            <p class="descriptionLanguage">
+              Quando comecei a trabalhar com C#, rapidamente percebi a
+              importância de dominar o gerenciamento de bancos de dados, e foi
+              assim que tive meu primeiro contato com o MySQL. Utilizando o
+              MySQL Workbench como ferramenta, fui capaz de aprender as
+              nuances de uma das linguagens mais poderosas para manipulação de
+              dados: SQL. O gerenciamento de banco de dados é essencial em
+              qualquer aplicação moderna, e essa habilidade me permitiu criar
+              sistemas robustos e eficientes. Em especial, apliquei meus
+              conhecimentos em um sistema CRUD, onde desenvolvi uma solução
+              completa para a criação, leitura, atualização e exclusão de
+              dados, o que me permitiu integrar o front-end com o back-end de
+              maneira eficaz. O trabalho com bancos de dados não só ampliou
+              minhas capacidades técnicas, mas também me proporcionou uma
+              compreensão mais profunda da arquitetura de sistemas, otimização
+              de consultas e segurança de dados, elementos críticos para o
+              sucesso de qualquer aplicação de larga escala.
+            </p>
+          </div>
+
+          <div class="backgroundContent">
+            <p class="languageTitle">Asp.Net Core</p>
+            <p class="descriptionLanguage">
+              Atualmente, tenho me dedicado com afinco ao estudo e ao
+              aprimoramento das minhas habilidades em ASP.NET Core, um
+              framework da plataforma .NET que me proporciona uma maneira
+              eficiente de desenvolver aplicações web escaláveis e de alta
+              performance. Minha experiência com este framework engloba a
+              utilização de tecnologias como MVC, Razor Pages e Blazor,
+              permitindo que eu construa soluções completas para o ambiente
+              web. O que mais me atrai no ASP.NET Core é a sua flexibilidade e
+              poder, especialmente ao trabalhar com o .NET 8.0. No entanto, ao
+              explorar o conteúdo disponível sobre essa tecnologia, percebi
+              que ainda há uma lacuna significativa de materiais voltados para
+              iniciantes, e é exatamente essa necessidade que me motiva a, no
+              futuro, contribuir com a comunidade. Pretendo compartilhar meu
+              conhecimento e ajudar a preencher essa lacuna, criando conteúdos
+              didáticos que possam auxiliar outros desenvolvedores que estão
+              iniciando sua jornada no ASP.NET Core, facilitando sua
+              aprendizagem e capacitação para o mercado de trabalho.
+            </p>
+          </div>
+
+          <div class="backgroundContent">
+            <p class="languageTitle">Git</p>
+            <p class="descriptionLanguage">
+              Git foi uma das primeiras ferramentas que introduzi na minha
+              rotina de desenvolvimento e rapidamente percebi sua importância
+              para o versionamento de código. Com ele, aprendi a gerenciar
+              diferentes versões de um projeto, permitindo que eu trabalhasse
+              de forma mais organizada e eficiente. Recentemente, obtive uma
+              certificação em Git pela plataforma DIO.me, o que consolidou
+              ainda mais meu entendimento sobre o funcionamento dessa poderosa
+              ferramenta. Git não é apenas sobre controle de versão; ele
+              também permite colaboração eficiente em equipes, já que
+              diferentes desenvolvedores podem trabalhar simultaneamente no
+              mesmo projeto, realizando commits, gerenciando branches e
+              resolvendo conflitos de maneira rápida. A experiência que
+              adquiri utilizando Git foi fundamental para que eu pudesse
+              voltar no tempo e recuperar versões anteriores de códigos
+              importantes que haviam sido alterados acidentalmente. A
+              ferramenta provou ser indispensável para garantir a integridade
+              e a continuidade de qualquer projeto de software.
+            </p>
+          </div>
+
+          <div class="backgroundContent">
+            <p class="languageTitle">Bootstrap</p>
+            <p class="descriptionLanguage">
+              O primeiro framework CSS que tive o prazer de aprender. Comecei
+              a utilizá-lo durante um projeto importante em que trabalhei. Com
+              a versatilidade do Bootstrap, pude aplicar componentes prontos
+              que aceleraram o processo de desenvolvimento front-end. A
+              modularidade e a responsividade nativas foram recursos
+              essenciais, facilitando o desenvolvimento de layouts responsivos
+              com menor esforço. No entanto, para otimizar a performance de um
+              projeto específico, decidi seguir por uma abordagem manual,
+              utilizando HTML, CSS e JavaScript puros, sem o suporte do
+              framework. Apesar de exigir mais trabalho, essa decisão me
+              permitiu entender melhor a estrutura do código e aumentar minhas
+              habilidades com estilização personalizada. O aprendizado com
+              Bootstrap, no entanto, segue sendo fundamental para mim,
+              especialmente quando busco agilidade em protótipos ou projetos
+              que necessitem de rápida implementação de design moderno e
+              responsivo.
+            </p>
+          </div>
+          <div class="backgroundContent">
+            <p class="languageTitle">React</p>
+            <p class="descriptionLanguage">
+              React é um dos frameworks front-end mais poderosos com os quais
+              comecei a ter contato. A flexibilidade e a estrutura baseada em
+              componentes do React oferecem uma maneira eficiente de construir
+              interfaces dinâmicas e interativas. Ainda que eu não tenha
+              desenvolvido um projeto significativo com ele até o momento,
+              estou profundamente interessado em explorar mais suas
+              capacidades. Pretendo integrar o React em uma aplicação web
+              utilizando C# no back-end, combinando o melhor de ambos os
+              mundos. Além disso, vejo no React uma excelente oportunidade
+              para aprimorar a experiência do usuário com interatividade
+              fluida e rápida, aproveitando o Virtual DOM para otimizar a
+              performance. A comunidade vibrante em torno do React também é
+              uma grande fonte de suporte, tornando o aprendizado contínuo
+              desse framework uma jornada empolgante e promissora para o meu
+              desenvolvimento profissional.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="aboutMe">
+      <div class="aboutMeBackground">
+        <div class="aboutMeContent">
           <h5>Sobre mim</h5>
-          <div class="aboutMeContent">
+          <div class="backgroundAboutMeContent">
+            <img class="myPhoto" src="src/images/MyPhoto.jpeg" alt="Minha foto">
             <p>
               Meu nome é Ranyel Cerracena de Sousa, também conhecido como Race,
               e sou desenvolvedor Full-Stack e aspirante a desenvolvedor .NET.
@@ -488,9 +437,11 @@
             </p>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <script src="src/scripts/script.js" defer></script>
-  </body>
+  <script src="src/scripts/script.js" defer></script>
+</body>
+
 </html>
